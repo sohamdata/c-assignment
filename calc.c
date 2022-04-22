@@ -120,22 +120,13 @@ int main()
     printf(
         "Made by Soham Datta RA2111031010089\n"
         "This calculator is cool\n\n"
-        "1. Addition\n"
-        "2. Subtraction\n"
-        "3. Multiplication\n"
-        "4. Division\n"
-        "5. Exponentiation\n"
-        "6. Sine\n"
-        "7. Cosine\n"
-        "8. Tangent\n"
-        "9. Floor\n"
-        "10. Ceiling\n"
-        "11. Round\n"
-        "12. Absolute value\n\n"
+        "1. Addition\n2. Subtraction\n3. Multiplication\n4. Division\n"
+        "5. Exponentiation\n6. Sine\n7. Cosine\n8. Tangent\n9. Floor\n"
+        "10. Ceiling\n11. Round\n12. Absolute value\n\n"
         "Enter your choice: ");
 
     scanf("%d", &choice);
-
+    // calling the functions according to the choice
     switch (choice)
     {
     case 1:
@@ -175,6 +166,7 @@ int main()
         AbsoluteValue();
         break;
     default:
+        // for invalid input
         printf("Enter a valid choice!");
     }
     return 0;
